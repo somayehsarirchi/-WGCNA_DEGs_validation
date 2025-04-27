@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below:"
+title: "WGCNA-based Integrated Analysis of Gene Expression Data"
+authors:
+  - family-names: Sarirchi
+    given-names: Somayeh
+    affiliation: "Independent Researcher"
+date-released: 2025-04-27
+license: CC-BY-4.0
+repository-code: https://github.com/somayehsarirchi/-WGCNA_DEGs_validation
+version: "1.0.0"
