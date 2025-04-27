@@ -22,14 +22,13 @@ This repository contains the complete workflow for integrating Weighted Gene Co-
 
 ```mermaid
 flowchart TD
-    A[Start] --> B[WGCNA Analysis: Network construction, module detection, and module merging]
-    B --> C[DEG Analysis: Identify differentially expressed genes (DEGs)]
-    C --> D[Intersection Analysis: Find overlapping genes between modules and DEGs]
-    D --> E[Hub Gene Selection: Rank hub genes by network centrality]
-    E --> F[Prioritization of Enrichment Results: Filter pathways, GO terms, diseases]
-    F --> G[Visualization: Generate bubble plots and disease-gene networks]
-    G --> H[End: Save results in results/ folder]
-```
+    A[WGCNA Analysis: Network construction, module detection, module merging] --> B[DEG Analysis: Identify differentially expressed genes (DEGs)]
+    B --> C[Intersection Analysis: Find overlapping genes between modules and DEGs]
+    C --> D[Hub Gene Selection: Rank hub genes by centrality]
+    D --> E[Prioritization of Enrichment Results: Filter pathways, GO terms, diseases]
+    E --> F[Visualization: Generate bubble plots and disease-gene networks]
+    F --> G[Save results in results/ folder]
+
 
 ## Repository Structure
 
