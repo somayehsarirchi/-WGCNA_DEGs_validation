@@ -5,6 +5,23 @@
 
 
 Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers
+graph TD
+    A[Start] --> B[WGCNA Analysis]
+    B --> C[DEG Analysis]
+    C --> D[Intersection Analysis]
+    D --> E[Hub Gene Selection]
+    E --> F[Prioritization of Enrichment Results]
+    F --> G[Visualization]
+    G --> H[Results Output]
+
+    subgraph Data Sources
+      I1[GSE192444 Peripheral Blood]
+      I2[GSE261892 Biopsy Samples]
+    end
+
+    I1 --> B
+    I2 --> B
+```
 
 Introduction
 
