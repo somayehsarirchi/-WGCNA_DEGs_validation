@@ -72,7 +72,7 @@ WGCNA_DEGs_validation/
 3. **Install the required R packages**:
 
    ```r
-   install.packages(c("WGCNA", "limma", "edgeR", "ggplot2", "igraph", "reshape2"))
+   install.packages(c("WGCNA", "limma", "DESeq2", "ggplot2", "igraph", "reshape2"))
    ```
 
 4. **Run the scripts sequentially**:
