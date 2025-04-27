@@ -109,3 +109,7 @@ This repository is under active development and optimization pending manuscript 
 
 Feel free to open an issue or contact for any questions regarding the workflow or analysis details!
 
+=======
+# -WGCNA_DEGs_validation
+WGCNA analysis combined with DEG validation across datasets
+>>>>>>> 78cb5258aa928b8d777bce76b1b2a1b7ac042030
