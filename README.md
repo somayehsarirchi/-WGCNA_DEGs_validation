@@ -3,49 +3,84 @@
   <img src="https://img.shields.io/badge/language-R-blue" alt="Language: R">
 </p>
 
-# WGCNA-based Integrated Analysis of Gene Expression Data
 
-## Introduction
+Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers
 
-This repository contains the complete workflow for a weighted gene co-expression network analysis (WGCNA) integrated with differential expression analysis (DEGs), hub gene identification, and enrichment filtering (pathways, GO processes, diseases).
+Introduction
 
-The goal was to identify biologically meaningful hub genes and key pathways by combining WGCNA modules with DEGs from independent datasets, followed by comprehensive downstream analysis and visualization.
+This repository contains the complete workflow for integrating Weighted Gene Co-expression Network Analysis (WGCNA) and Differential Expression Analysis (DEGs), followed by prioritization of enrichment results. The goal is to identify biologically meaningful hub genes and key biomarkers involved in chronic kidney allograft rejection.
 
-## Project Workflow
+Project Workflow
 
-- **WGCNA Analysis**: Network construction, module detection, and merging similar modules.
-- **Differential Expression Analysis (DEGs)**: Identification of DEGs between control and rejection samples.
-- **Intersection Analysis**: Extraction of genes overlapping between WGCNA modules and DEGs.
-- **Selection of Top Hub Genes**: Ranking hub genes based on network centrality scores.
-- **Filtering Enrichment Results**: Selection of significant pathways, GO processes, and diseases based on multiple filtering criteria.
-- **Visualization**: Final visual outputs including combined bubble plots and disease-gene networks.
+WGCNA Analysis: Network construction, module detection, and module merging.
 
-## Repository Structure
+DEG Analysis: Identification of differentially expressed genes between control and rejection samples.
 
-WGCNA_DEGs_validation/ │ ├── code/ │ ├── 01_WGCNA_Analysis.R │ ├── 02_DEGs_Analysis.R │ ├── 03_Intersect_Analysis.R │ ├── 04_Select_TopHubGenes_Gephi.R │ ├── 05_Select_SharedHubGenes.R │ ├── 06_Pathways_Filtering.R │ ├── 07_GO_Filtering.R │ └── 08_Disease_Filtering.R │ ├── data/ │ ├── GSE192444_series_matrix.csv │ ├── GSE192444Groups.csv │ └── familySoft_mini.csv │ ├── results/ │ ├── Plots/ │ │ ├── [Final visualizations like bubble plots and networks] │ └── WGCNA/ │ ├── [Module gene lists, intermediate results, DEG results, etc.] │ ├── README.md └── LICENSE
+Intersection Analysis: Extraction of overlapping genes between WGCNA modules and DEGs.
 
+Hub Gene Selection: Ranking of hub genes based on network centrality measures.
 
-## How to Use
+Prioritization of Enrichment Results: Filtering pathways, GO processes, and diseases based on hub gene involvement and statistical criteria.
 
-1. Clone this repository to your local machine.
-2. Open the `.R` scripts sequentially in your R environment (e.g., RStudio).
-3. Ensure required R packages are installed.
-4. Follow the project workflow step-by-step.
+Visualization: Final visualizations including bubble plots and disease-gene networks.
 
+Repository Structure
 
-## Data Source
+WGCNA_DEGs_validation/
+├── code/
+│   ├── 01_WGCNA_Analysis.R
+│   ├── 02_DEGs_Analysis.R
+│   ├── 03_Intersect_Analysis.R
+│   ├── 04_Select_TopHubGenes_Gephi.R
+│   ├── 05_Select_SharedHubGenes.R
+│   ├── 06_Pathways_Filtering.R
+│   ├── 07_GO_Filtering.R
+│   ├── 08_Disease_Filtering.R
+│   └── 09_BubblePlots.R
+|
+├── data/
+│   ├── GSE192444_series_matrix.csv
+│   ├── GSE192444Groups.csv
+│   ├── familySoft_mini.csv
+│   ├── GSE261892_raw_counts_GRCh38.p13_NCBI.csv
+│   └── GSE261892DEGs.csv
+|
+├── results/
+│   ├── Plots/
+│   │   └── [Final visualizations: bubble plots, disease networks]
+│   └── WGCNA/
+│       └── [Module gene lists, intermediate analysis results]
+|
+├── README.md
+└── LICENSE
 
-- GEO dataset: [GSE192444](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE192444)
-- GEO dataset: [GSE261892](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE261892)
+How to Use
 
-## License
+Clone this repository.
 
-This project is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+Open the .R scripts sequentially in your R environment (e.g., RStudio).
 
-## Citation
+Ensure the required R packages are installed.
+
+Follow the workflow step-by-step.
+
+Data Source
+
+GEO dataset: GSE192444
+
+GEO dataset: GSE261892
+
+Note: A minimized version of the familySoft annotation file (familySoft_mini.csv) is provided due to file size limitations. The full version can be downloaded from GSE192444_family.soft.gz.
+
+License
+
+This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+Citation
 
 If you use this repository, please cite it as:
 
-> Sarirchi, S. (2025). *WGCNA-based Integrated Analysis of Gene Expression Data*. GitHub repository. [https://github.com/somayehsarirchi/-WGCNA_DEGs_validation](https://github.com/somayehsarirchi/-WGCNA_DEGs_validation)
+Sarirchi, S. (2025). Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers. GitHub repository. https://github.com/somayehsarirchi/WGCNA_DEGs_validation
 
----
+Feel free to open an issue or contact if you have any questions or feedback about the workflow!
+
