@@ -1,3 +1,4 @@
+
 Creative Commons Attribution 4.0 International Public License (CC BY 4.0)
 
 By using the files and data in this repository ("Project"), you agree to the terms of the Creative Commons Attribution 4.0 International License.
@@ -16,7 +17,7 @@ No additional restrictions — You may not apply legal terms or technological me
 
 Attribution should be made as follows:
 
-This work is based on "WGCNA-based Integrated Analysis of Gene Expression Data" by Somayeh Sarirchi, available at https://github.com/somayehsarirchi/WGCNA_DEGs_validation, licensed under CC BY 4.0.
+This work is based on "Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers" by Somayeh Sarirchi, available at https://github.com/somayehsarirchi/-WGCNA_DEGs_validation, licensed under CC BY 4.0.
 
 A copy of the full license text can be found at:
 https://creativecommons.org/licenses/by/4.0/legalcode
