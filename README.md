@@ -20,21 +20,6 @@ This repository provides a comprehensive workflow for integrating Weighted Gene 
 
 ---
 
-## Workflow Overview
-
-```mermaid
-flowchart TD
-    A[Start] --> B[WGCNA Analysis: Network construction, module detection, and module merging]
-    B --> C[DEG Analysis: Identify differentially expressed genes (DEGs)]
-    C --> D[Intersection Analysis: Find overlapping genes between WGCNA modules and DEGs]
-    D --> E[Hub Gene Selection: Rank genes by network centrality]
-    E --> F[Prioritization of Enrichment Results: Filter pathways, GO terms, diseases]
-    F --> G[Visualization: Generate bubble plots and disease-gene networks]
-    G --> H[End: Save results in the results/ folder]
-```
-
----
-
 ## Repository Structure
 
 ```
@@ -58,10 +43,14 @@ WGCNA_DEGs_validation/
 │   └── GSE261892DEGs.csv
 │
 ├── results/
+│   ├── WGCNA/
+│   │   └── [Module gene lists, intermediate WGCNA results]
 │   ├── Plots/
-│   │   └── [Final visualizations: bubble plots, disease networks]
-│   └── WGCNA/
-│       └── [Module gene lists, intermediate analysis results]
+│   │   └── [Final visualizations: bubble plots, disease-gene networks]
+│   ├── Filtered_Enriched_Pathways.csv
+│   ├── Filtered_Enriched_GO.csv
+│   ├── Filtered_Enriched_Diseases.csv
+│   └── [Other processed and filtered results]
 │
 ├── README.md
 └── LICENSE
