@@ -1,5 +1,11 @@
 WGCNA-based Integrated Analysis of Gene Expression Data
 
+ <p align="center">
+  <img src="https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0">
+  <img src="https://img.shields.io/badge/language-R-blue" alt="Language: R">
+  <img src="https://img.shields.io/github/last-commit/somayehsarirchi/-WGCNA_DEGs_validation" alt="Last Commit">
+</p>
+
  Introduction
 
 This repository contains the complete workflow for a weighted gene co-expression network analysis (WGCNA) integrated with differential expression analysis (DEGs), hub gene identification, and enrichment filtering (pathways, GO processes, diseases).
