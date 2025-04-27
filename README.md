@@ -23,16 +23,6 @@ Prioritization of Enrichment Results: Filtering pathways, GO processes, and dise
 
 Visualization: Final visualizations including bubble plots and disease-gene networks.
 
-Project Workflow Overview
-
-flowchart TD
-    A[Start: WGCNA Analysis] --> B[DEG Analysis]
-    B --> C[Intersection Analysis]
-    C --> D[Hub Gene Selection]
-    D --> E[Prioritization of Enrichment Results]
-    E --> F[Visualization]
-    F --> G[Save results in results/ folder]
-
 Repository Structure
 
 WGCNA_DEGs_validation/
@@ -46,47 +36,50 @@ WGCNA_DEGs_validation/
 │   ├── 07_GO_Filtering.R
 │   ├── 08_Disease_Filtering.R
 │   └── 09_BubblePlots.R
+|
 ├── data/
 │   ├── GSE192444_series_matrix.csv
 │   ├── GSE192444Groups.csv
 │   ├── familySoft_mini.csv
 │   ├── GSE261892_raw_counts_GRCh38.p13_NCBI.csv
 │   └── GSE261892DEGs.csv
+|
 ├── results/
 │   ├── Plots/
 │   │   └── [Final visualizations: bubble plots, disease networks]
 │   └── WGCNA/
 │       └── [Module gene lists, intermediate analysis results]
+|
 ├── README.md
 └── LICENSE
 
 How to Use
 
-Clone this repository to your local machine.
+Clone this repository.
 
-Ensure that R (>=4.0) and RStudio are installed.
+Open the .R scripts sequentially in your R environment (e.g., RStudio).
 
-Install the required R packages before running the scripts.
+Ensure the required R packages are installed.
 
-Open the .R scripts sequentially in RStudio:
+Follow the workflow step-by-step.
 
-Start with 01_WGCNA_Analysis.R, then 02_DEGs_Analysis.R, and so on.
+Data Source
 
-Follow the workflow step-by-step.Results (plots, filtered enrichments, hub gene lists) will be saved in the results/ folder.
+GEO dataset: GSE192444
 
-Data Sources
+GEO dataset: GSE261892
 
-GSE192444 - Peripheral blood samples
-
-GSE261892 - Biopsy samples
+Note: A minimized version of the familySoft annotation file (familySoft_mini.csv) is provided due to file size limitations. The full version can be downloaded from GSE192444_family.soft.gz.
 
 License
 
-This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).Attribution is required for reuse.
+This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
 
 Citation
 
 If you use this repository, please cite it as:
 
-Sarirchi, S. (2025). Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers. GitHub repository. https://github.com/somayehsarirchi/-WGCNA_DEGs_validation
+Sarirchi, S. (2025). Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers. GitHub repository. https://github.com/somayehsarirchi/WGCNA_DEGs_validation
+
+
 
