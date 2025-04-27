@@ -32,9 +32,11 @@ WGCNA_DEGs_validation/ │ ├── code/ │ ├── 01_WGCNA_Analysis.R │
 3. Ensure required R packages are installed.
 4. Follow the project workflow step-by-step.
 
+
 ## Data Source
 
-- GEO dataset: [GSE192444](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE192nnn/GSE192444/soft/GSE192444_family.soft.gz)
+- GEO dataset: [GSE192444](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE192444)
+- GEO dataset: [GSE261892](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE261892)
 
 ## License
 
