@@ -1,27 +1,33 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0">
-  <img src="https://img.shields.io/badge/language-R-blue" alt="Language: R">
-</p>
-
 Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers
 
 Introduction
 
-This repository contains the complete workflow for integrating Weighted Gene Co-expression Network Analysis (WGCNA) and Differential Expression Analysis (DEGs), followed by prioritization of enrichment results. The goal is to identify biologically meaningful hub genes and key biomarkers involved in chronic kidney allograft rejection.
+This repository provides a comprehensive workflow for integrating Weighted Gene Co-expression Network Analysis (WGCNA) and Differential Expression Analysis (DEGs), followed by prioritization of enrichment results. The goal is to identify biologically meaningful hub genes and key biomarkers involved in chronic kidney allograft rejection.
 
 Project Workflow
 
-WGCNA Analysis: Network construction, module detection, and module merging.
+WGCNA Analysis: Construct gene co-expression networks, detect and merge modules.
 
-DEG Analysis: Identification of differentially expressed genes between control and rejection samples.
+DEG Analysis: Identify differentially expressed genes between control and rejection samples.
 
-Intersection Analysis: Extraction of overlapping genes between WGCNA modules and DEGs.
+Intersection Analysis: Extract overlapping genes between WGCNA modules and DEGs.
 
-Hub Gene Selection: Ranking of hub genes based on network centrality measures.
+Hub Gene Selection: Rank hub genes based on network centrality metrics.
 
-Prioritization of Enrichment Results: Filtering pathways, GO processes, and diseases based on hub gene involvement and statistical criteria.
+Prioritization of Enrichment Results: Filter pathways, GO terms, and diseases based on hub gene involvement and statistical significance.
 
-Visualization: Final visualizations including bubble plots and disease-gene networks.
+Visualization: Create bubble plots and disease-gene networks for the final results.
+
+Workflow Overview
+
+flowchart TD
+    A[Start] --> B[WGCNA Analysis: Network construction, module detection, and module merging]
+    B --> C[DEG Analysis: Identify differentially expressed genes (DEGs)]
+    C --> D[Intersection Analysis: Find overlapping genes between WGCNA modules and DEGs]
+    D --> E[Hub Gene Selection: Rank genes by network centrality]
+    E --> F[Prioritization of Enrichment Results: Filter pathways, GO terms, diseases]
+    F --> G[Visualization: Generate bubble plots and disease-gene networks]
+    G --> H[End: Save results in the results/ folder]
 
 Repository Structure
 
@@ -36,40 +42,50 @@ WGCNA_DEGs_validation/
 │   ├── 07_GO_Filtering.R
 │   ├── 08_Disease_Filtering.R
 │   └── 09_BubblePlots.R
-|
+│
 ├── data/
 │   ├── GSE192444_series_matrix.csv
 │   ├── GSE192444Groups.csv
 │   ├── familySoft_mini.csv
 │   ├── GSE261892_raw_counts_GRCh38.p13_NCBI.csv
 │   └── GSE261892DEGs.csv
-|
+│
 ├── results/
 │   ├── Plots/
 │   │   └── [Final visualizations: bubble plots, disease networks]
 │   └── WGCNA/
 │       └── [Module gene lists, intermediate analysis results]
-|
+│
 ├── README.md
 └── LICENSE
 
 How to Use
 
-Clone this repository.
+Clone the repository:
 
-Open the .R scripts sequentially in your R environment (e.g., RStudio).
+git clone https://github.com/somayehsarirchi/WGCNA_DEGs_validation.git
 
-Ensure the required R packages are installed.
+Set up your environment:
 
-Follow the workflow step-by-step.
+Install R (version 4.0 or higher) and RStudio.
 
-Data Source
+Install the required R packages:
 
-GEO dataset: GSE192444
+install.packages(c("WGCNA", "limma", "DESeq2", "ggplot2", "igraph", "reshape2"))
 
-GEO dataset: GSE261892
+Run the scripts sequentially:
 
-Note: A minimized version of the familySoft annotation file (familySoft_mini.csv) is provided due to file size limitations. The full version can be downloaded from GSE192444_family.soft.gz.
+Start with 01_WGCNA_Analysis.R, then continue through to 09_BubblePlots.R.
+
+Review your results:
+
+Outputs will be saved in the results/ folder, organized by analysis type.
+
+Data Sources
+
+GSE192444 - Peripheral blood and Biopsy samples
+
+GSE261892 - Biopsy samples
 
 License
 
@@ -80,6 +96,4 @@ Citation
 If you use this repository, please cite it as:
 
 Sarirchi, S. (2025). Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers. GitHub repository. https://github.com/somayehsarirchi/WGCNA_DEGs_validation
-
-Feel free to open an issue or contact if you have any questions or feedback about the workflow!
 
