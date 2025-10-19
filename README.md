@@ -86,15 +86,14 @@ You are free to share and adapt the workflow with proper attribution.
 
 📚 Citation
 
-If you use this repository, please cite it as:
-
-Sarirchi, S. (2025). Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers. Zenodo. https://doi.org/10.5281/zenodo.17389220
+Sarirchi, S. (2025). Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers.
+Zenodo. https://doi.org/10.5281/zenodo.17389220
 
 💬 Contact
 
 For questions or collaboration inquiries:
-📧 somayehsarirchi[at]gmail.com
-GitHub: somayehsarirchi
+📧 s.sarirchi@gmail.com
+GitHub:https://github.com/somayehsarirchi
 
 🧩 Keywords
 
