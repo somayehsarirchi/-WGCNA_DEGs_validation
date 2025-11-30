@@ -1,37 +1,58 @@
-# Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers  
+# 🧬 Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers  
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17389220.svg)](https://doi.org/10.5281/zenodo.17389220)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 ![Language](https://img.shields.io/badge/R-100%25-blue)
 
 ---
 
-## 🧬 Overview
-This repository provides a comprehensive workflow for integrating **Weighted Gene Co-expression Network Analysis (WGCNA)** and **Differential Expression Analysis (DEG)** to identify biologically meaningful hub genes and enriched pathways involved in **chronic kidney allograft rejection**.  
-The pipeline supports reproducible identification and validation of immune-related biomarkers through cross-dataset DEG validation and enrichment prioritization.
+## 🧬 Overview  
+This repository provides a complete and reproducible workflow integrating **Weighted Gene Co-expression Network Analysis (WGCNA)** and **Differential Expression Analysis (DEG)** to identify immune-related **hub genes**, enriched pathways, and disease associations involved in **chronic kidney allograft rejection**.
+
+The pipeline enables:  
+✔ Cross-dataset DEG validation  
+✔ Prioritization of functional enrichment results  
+✔ Visualization of immune-related biomarker signatures  
+✔ Generation of publication-ready plots  
 
 ---
+
+## 🔍 Key Results (Preview)
+
+### **1. Soft-thresholding Power**
 ![Soft thresholding power](results/Plots/Figure_S1.tif)
+
+### **2. Module Dendrogram**
 ![Module dendrogram](results/Plots/Figure_1.tif)
+
+### **3. Module–Trait Heatmap**
 ![Module–trait heatmap](results/Plots/Figure_2.tif)
+
+### **4. Enriched Pathways (Bubble Plot)**
 ![Enriched Pathways plot](results/Plots/Figure_7.tif)
+
+### **5. Enriched Diseases Plot**
 ![Enriched Diseases plot](results/Plots/Figure_8.tif)
+
+### **6. Protein–Protein Interaction (PPI) Network**
 ![PPI network](results/Plots/Figure_5.tif)
 
+---
 
 ## ⚙️ Project Workflow
 
 | Step | Description |
 |------|--------------|
-| **1. WGCNA Analysis** | Construct gene co-expression networks, detect and merge modules. |
-| **2. DEG Analysis** | Identify differentially expressed genes between control and rejection samples using *limma* or *DESeq2*. |
+| **1. WGCNA Analysis** | Construct gene co-expression networks, detect & merge modules. |
+| **2. DEG Analysis** | Identify differentially expressed genes using *limma* or *DESeq2*. |
 | **3. Intersection Analysis** | Extract overlapping genes between WGCNA modules and DEGs. |
-| **4. Hub Gene Selection** | Rank hub genes based on network centrality metrics. |
-| **5. Prioritization of Enrichment Results** | Filter pathways, GO terms, and diseases based on hub gene involvement and statistical significance. |
-| **6. Visualization** | Create bubble plots, enrichment maps, and disease–gene networks. |
+| **4. Hub Gene Selection** | Rank hub genes using multiple centrality metrics. |
+| **5. Enrichment Prioritization** | Filter pathways & disease terms based on hub-gene relevance. |
+| **6. Visualization** | Produce bubble plots, enrichment maps, and PPI networks. |
 
 ---
 
 ## 📁 Repository Structure
+
 
 WGCNA_DEGs_validation/
 ├── code/
@@ -58,56 +79,56 @@ WGCNA_DEGs_validation/
 
 ## 🚀 How to Use
 
-### 1. Clone the repository
+### **1. Clone the repository**
 ```bash
 git clone https://github.com/somayehsarirchi/WGCNA_DEGs_validation.git
 cd WGCNA_DEGs_validation
+
 2. Set up your environment
 
-Install R (v4.0 or higher) and RStudio.
+    Install R ≥ 4.0 and RStudio.
 
-3. Install required R packages
+3. Install required packages
+
 install.packages(c("WGCNA", "limma", "DESeq2", "ggplot2", "igraph", "reshape2"))
 
-4. Run the scripts sequentially
+4. Run the analysis pipeline
+
 source("code/01_WGCNA_Analysis.R")
 source("code/02_DEGs_Analysis.R")
 source("code/03_Intersect_Analysis.R")
 source("code/04_Select_TopHubGenes_Gephi.R")
+source("code/05_Enrichment_Visualization.R")
 
-5. Review your results
+5. View the results
 
-Outputs are automatically saved in the results/ folder, organized by analysis type.
-
+All outputs are saved automatically under the results/ directory.
 🧠 Data Sources
 
-GSE192444 – Peripheral blood and biopsy samples
+    GSE192444 – Peripheral blood & biopsy samples
 
-GSE261892 – Biopsy samples
+    GSE261892 – Biopsy samples
 
-🪶 License
+🪪 License
 
-This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0)
-.
-You are free to share and adapt the workflow with proper attribution.
-
+This project is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
+You may use and modify the workflow with proper attribution.
 📚 Citation
 
 Sarirchi, S. (2025). Combining WGCNA and DEG Analysis with Prioritization of Enrichment Results for Kidney Allograft Biomarkers.
 Zenodo. https://doi.org/10.5281/zenodo.17389220
-
 💬 Contact
 
-For questions or collaboration inquiries:
-📧 s.sarirchi@gmail.com
-GitHub:https://github.com/somayehsarirchi
+📧 Email: s.sarirchi@gmail.com
 
+🔗 GitHub: https://github.com/somayehsarirchi
+
+🔗 LinkedIn: https://linkedin.com/in/somayeh-sarirchi-9b2b59171
 🧩 Keywords
 
-Bioinformatics • WGCNA • DEG • Network Biology • Kidney Allograft Rejection • Enrichment Analysis • Hub Genes • Systems Immunology
+Bioinformatics • Transcriptomics • WGCNA • DEG • Network Biology • Kidney Allograft Rejection • Enrichment Analysis • Hub Genes • Systems Immunology
 
 ⭐ If you find this workflow useful, please consider starring the repository!
-
 
 
 
