@@ -10,6 +10,13 @@ This repository provides a comprehensive workflow for integrating **Weighted Gen
 The pipeline supports reproducible identification and validation of immune-related biomarkers through cross-dataset DEG validation and enrichment prioritization.
 
 ---
+![Soft thresholding power](results/Plots/Figure_S1.tif)
+![Module dendrogram](results/Plots/Figure_1.tif)
+![Module–trait heatmap](results/Plots/Figure_2.tif)
+![Enriched Pathways plot](results/Plots/Figure_7.tif)
+![Enriched Diseases plot](results/Plots/Figure_8.tif)
+![PPI network](results/Plots/Figure_5.tif)
+
 
 ## ⚙️ Project Workflow
 
