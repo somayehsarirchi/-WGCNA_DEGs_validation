@@ -5,12 +5,13 @@
 
 ---
 ## 📄 Commercial Case Study
+Independent outcome-driven transcriptomic network analysis for immune biomarker discovery with cross-dataset validation.
 
 ➡ [Download Case Study PDF](case_study/CaseStudy2_Immune_Hub_Gene_Discovery_Transcriptomic_Networks.pdf)
 
-## 🧬 Overview  
-This repository provides a complete and reproducible workflow integrating **Weighted Gene Co-expression Network Analysis (WGCNA)** and **Differential Expression Analysis (DEG)** to identify immune-related **hub genes**, enriched pathways, and disease associations involved in **chronic kidney allograft rejection**.
 
+## 🧬 Overview  
+This repository demonstrates an end-to-end transcriptomic network-based biomarker discovery workflow integrating WGCNA and DEG analysis for immune-driven diseases.
 The pipeline enables:  
 ✔ Cross-dataset DEG validation  
 ✔ Prioritization of functional enrichment results  
