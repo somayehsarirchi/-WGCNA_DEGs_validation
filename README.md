@@ -4,6 +4,9 @@
 ![Language](https://img.shields.io/badge/R-100%25-blue)
 
 ---
+## 📄 Commercial Case Study
+
+➡ [Download Case Study PDF](case_study/CaseStudy2_Immune_Hub_Gene_Discovery_Transcriptomic_Networks.pdf)
 
 ## 🧬 Overview  
 This repository provides a complete and reproducible workflow integrating **Weighted Gene Co-expression Network Analysis (WGCNA)** and **Differential Expression Analysis (DEG)** to identify immune-related **hub genes**, enriched pathways, and disease associations involved in **chronic kidney allograft rejection**.
